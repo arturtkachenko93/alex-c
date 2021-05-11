@@ -2,25 +2,22 @@
 
 // =================================== MAIN ======================================
 
-// let yourBudget = 3000;
-// let nameYourStore;
-// let myShop = {
-//   budget: yourBudget,
-//   nameStore: nameYourStore,
-//   shopProduct: [1,2,3],
-//   personal: {},
-//   open: false,
-// }
+let yourBudget = +prompt("Ваш бюджет?", "");
+let yourStore = prompt("Название Вашего магазина");
+let myShop = {
+  budget: yourBudget,
+  nameStore: yourStore,
+  shopProduct: [],
+  personal: {},
+  open: false,
+}
 
-// let questionFirst = prompt("Что будем продавать?");
-// let questionSecond = prompt("Что будем продавать?");
-// let questionThird = prompt("Что будем продавать?");
+myShop.shopProduct[0] = prompt("Что будем продавать?");
+myShop.shopProduct[1] = prompt("Что будем продавать?");
+myShop.shopProduct[2] = prompt("Что будем продавать?");
 
-// myShop.shopProduct[0] = questionFirst;
-// myShop.shopProduct[1] = questionSecond;
-// myShop.shopProduct[2] = questionThird;
+console.log(myShop);
 
-// console.log(myShop.shopProduct);
 
 
 // =================================== COMPLICATED ======================================
