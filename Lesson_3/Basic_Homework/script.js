@@ -2,8 +2,18 @@
 
 // =================================== MAIN ======================================
 
-let yourBudget = +prompt("Ваш бюджет?", "");
-let yourStore = prompt("Название Вашего магазина");
+let yourBudget = prompt("Ваш бюджет?", "");
+while (isNaN(yourBudget) === true || yourBudget === null || yourBudget === "") {
+  yourBudget = prompt("Введите корректное значение!", "");
+}
+
+let time;
+
+let yourStore = prompt("Название Вашего магазина", "");
+while (yourStore === null || yourStore === "") { 
+  yourStore = prompt("Введите корректное значение!", "");
+}
+
 let myShop = {
   budget: yourBudget,
   nameStore: yourStore,
@@ -12,15 +22,21 @@ let myShop = {
   open: false,
 }
 
-myShop.shopProduct[0] = prompt("Что будем продавать?");
-myShop.shopProduct[1] = prompt("Что будем продавать?");
-myShop.shopProduct[2] = prompt("Что будем продавать?");
+for(let i = 0; i < 5; i++) {
+  let product = prompt("Что будем продавать?", "");
+  while ( product === null || product === "" || product.length > 10 || isNaN(product) === false) { 
+    product = prompt("Введите корректное значение!", "");
+  } 
+  
+  myShop.shopProduct[i] = product;
+}
 
-console.log(myShop);
-
-
-
-// =================================== COMPLICATED ======================================
-
-// let yourAge = +prompt("Сколько тебе лет?");
-// console.log(yourAge || "Пользователь ответил неверно!")
+if (time < 0) {
+  console.log("Такого не может быть!");
+} else if (time > 8 && time < 20) {
+  console.log("Время работать!");
+} else if (time < 24) {
+  console.log("Мы не работаем!");
+} else {
+  console.log("В сутках только 24 часа!");
+}
