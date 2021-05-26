@@ -52,6 +52,29 @@
 // console.log(example(["Oh", "god", " ", " what", "this", " ", "?"]));
 // console.log(example(["Oh", "god", " ", " what", "this", " ", "?"]));
 
+// ======================================= 5 ==================================
+
+// function sumPrimes(lower, upper) {
+//   let result = 0;
+//   nextPrime: for (let i = lower; i <= upper; i++) {
+//     if (i === 1) {
+//       i++;
+//     }
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         continue nextPrime;
+//       }
+//     }
+//     result += i;
+//   }
+//   console.log(result);
+// }
+
+// sumPrimes(4, 20);
+// sumPrimes(20, 4);
+// sumPrimes(2, 7);
+// sumPrimes(1, 30);
+
 // ===================================== 7 =================================
 
 /* Вам будет предоставлен массив уникальных элементов.
