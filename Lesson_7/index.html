@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <div class="box">
+        <div class="box__title">Магазин</div>
+
+        <button class="box__button">Начать торговлю</button>
+        <div class="open"></div>
+      </div>
+    </div>
+    <div class="layout">
+      <div class="magazine">
+
+        <div class="magazine__item">Название магазина: <span class="magazine__name"></span></div>
+        <div class="magazine__item">Бюджет: <span class="magazine__budget"></span></div>
+        <div class="magazine__item">Категории товаров: <span class="magazine__category"></span></div>
+        <div class="magazine__item">Товары: <span class="magazine__product"></span></div>
+        <div class="magazine__item">Сотрудники: <span class="magazine__personal"></span></div>
+        <div class="magazine__item">Товар дня: <span class="magazine__product-day"></span></div>
+      </div>
+      <div class="data">
+        <div class="data-item">
+          <div class="data-item__title">Введите название магазина</div>
+          <div class="data-item__category">
+            <input type="text" placeholder="Начинайте вводить.." class="data-item__input input-name">
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="data-item__title">Введите бюджет</div>
+          <div class="data-item__category">
+            <input type="text" placeholder="Начинайте вводить.." class="data-item__input input-budget">
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="data-item__title">Введите категории товаров</div>
+          <div class="data-item__category">
+            <input type="text" placeholder="Введите категорию товара.." class="data-item__input input-category">
+            <input type="text" placeholder="Введите категорию товара.." class="data-item__input input-category">
+            <input type="text" placeholder="Введите категорию товара.." class="data-item__input input-category">
+            <input type="text" placeholder="Введите категорию товара.." class="data-item__input input-category">
+          </div>
+          <button class="btn btn-category">Утвердить</button>
+        </div>
+        <div class="data-item">
+          <div class="data-item__title">Введите товары через запятую</div>
+          <div class="data-item__category">
+            <input type="text" placeholder="Начинайте вводить.." class="data-item__input input-product">
+          </div>
+        </div>
+
+        <div class="data-item">
+          <div class="data-item__title">Имена сотрудников в смене</div>
+          <div class="data-item__category">
+            <input type="text" placeholder="Начинайте вводить.." class="data-item__input input-personal">
+            <input type="text" placeholder="Начинайте вводить.." class="data-item__input input-personal">
+            <input type="text" placeholder="Начинайте вводить.." class="data-item__input input-personal">
+          </div>
+          <button class="btn btn-1">Утвердить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно -->
+  <div class="popup">
+    <div class="popup__window">
+      <div class="popup__error">Ошибка!</div>
+      <div class="popup__operating-mode">
+        Ваш режим работы с 8:00 до 20:00
+      </div>
+      <div class="popup__current-time">А сейчас: <span></span> часов</div>
+      <button class="popup__button">Хорошо :(</button>
+    </div>
+  </div>
+  <script src='js/script.js'></script>
+</body>
+
+</html>
